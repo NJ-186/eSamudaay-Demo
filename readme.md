@@ -1,6 +1,6 @@
-********************************* eSaumudaay Demo ********************************* 
+# eSaumudaay Demo
 
-# Overview :-
+## Overview :-
 This is a simple demo project. It is an application server with a single API. The API takes as input items ordered, delivery distance, and offer applied. The response is the total order value.
 
 
@@ -34,7 +34,7 @@ This is a simple demo project. It is an application server with a single API. Th
 ## Important Technical Decision :-
 1. Creating separate utility functions so that all the *Computations* are carried out at a single place.
 
-2. Having a separate *Const.py* file to store all the constants used in each app.
+2. Having a separate `Const.py` file to store all the constants used in each app.
 
 3. Using and `OrderedDict()` to store the range for calculating delivery_fee. This was done to have a *configurable slab*.
 
