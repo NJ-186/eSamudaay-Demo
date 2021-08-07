@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "c6bec4b7-2ce9-428b-9f82-84b57961dc31",
+		"name": "eSamudaay",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "HomePage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calculate Order Total",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "order_items",
+							"value": "[\n    {\n      \"name\": \"bread\",\n      \"quantity\": 2,\n      \"price\": 2200\n    },\n    {\n      \"name\": \"butter\",\n      \"quantity\": 1,\n      \"price\": 5900\n    }\n  ]",
+							"type": "text"
+						},
+						{
+							"key": "distance",
+							"value": "1200",
+							"type": "text"
+						},
+						{
+							"key": "offer",
+							"value": "{\n    \"offer_type\": \"FLAT\",\n    \"offer_val\": 1000\n  }",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/calculate_order_total",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"calculate_order_total"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calculate Order Total 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "order_items",
+							"value": "[\n    {\n      \"name\": \"bread\",\n      \"quantity\": 2,\n      \"price\": 2200\n    },\n    {\n      \"name\": \"butter\",\n      \"quantity\": 1,\n      \"price\": 5900\n    },\n    {\n      \"name\": \"milk\",\n      \"quantity\": 2,\n      \"price\": 10000\n    }\n  ]",
+							"type": "text"
+						},
+						{
+							"key": "distance",
+							"value": "6200",
+							"type": "text"
+						},
+						{
+							"key": "offer",
+							"value": "{\n    \"offer_type\": \"FLAT\",\n    \"offer_val\": 10000\n  }",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/calculate_order_total",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"calculate_order_total"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calculate Order Total 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "order_items",
+							"value": "[\n    {\n      \"name\": \"bread\",\n      \"quantity\": 2,\n      \"price\": 2200\n    }\n  ]",
+							"type": "text"
+						},
+						{
+							"key": "distance",
+							"value": "13000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/calculate_order_total",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"calculate_order_total"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
